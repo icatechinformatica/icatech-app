@@ -30,7 +30,7 @@ class LoginScreen extends Component {
     }
     
     restorePassword=()=>{
-        Linking.openURL('https://redicatech.com/forgot-password').catch((err) => console.error('An error occurred', err));
+        Linking.openURL('https://red.icatech.gob.mx/forgot-password').catch((err) => console.error('An error occurred', err));
     }
 
     login=async()=> {
@@ -77,7 +77,7 @@ class LoginScreen extends Component {
                                         <Text style={{ color: 'white' }}>Entrar</Text>
                                 </Button>
                                 <View style={{ marginTop: 10 }}>
-                                    <Button style={{  marginTop: 10 }} mode='text' onPress={()=> this.props.navigation.navigate('SignUp')} style={{ marginTop: 0 }}>
+                                    <Button style={{  marginTop: 10 }} mode='text' onPress={()=> this.props.navigation.navigate('SignUp')}>
                                         <Text style={{ color: '#541533' }}>No tienes una cuenta?</Text>
                                     </Button>
                                 </View>
